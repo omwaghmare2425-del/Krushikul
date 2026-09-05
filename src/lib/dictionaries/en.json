@@ -1,0 +1,188 @@
+{
+  "header": {
+    "title": "KrushiKul",
+    "voiceInput": "Voice Input",
+    "changeLanguage": "Change Language"
+  },
+  "hero": {
+    "title": "Helping Farmers with Smart, Real-Time Advisory.",
+    "subtitle": "KrushiKul provides AI-powered guidance to empower small and marginal farmers across India.",
+    "ctaGetStarted": "Get Started",
+    "ctaUploadImage": "Upload Crop Image"
+  },
+  "features": {
+    "title": "Our Core Features",
+    "subtitle": "Empowering you with data-driven tools for smarter farming.",
+    "soilHealth": {
+      "title": "Soil Health",
+      "description": "Get recommendations for soil health and personalized fertilizer guidance."
+    },
+    "pestDetection": {
+      "title": "Pest & Disease Detection",
+      "description": "Upload an image of your crop to detect pests and diseases instantly."
+    },
+    "weatherAlerts": {
+      "title": "Weather Alerts",
+      "description": "Receive weather-based alerts and predictive insights for your location."
+    },
+    "marketPrices": {
+      "title": "Market Prices",
+      "description": "Track real-time market prices for your crops to sell at the right time."
+    }
+  },
+  "weather": {
+    "title": "Real-Time Weather",
+    "subtitle": "Get current weather conditions for your farm.",
+    "cardTitle": "Weather Conditions",
+    "showingWeatherFor": "Showing weather for",
+    "clickToGetWeather": "Click the button to get weather for your current location.",
+    "getWeatherButton": "Get Weather for my Location",
+    "yourLocation": "Your Location",
+    "humidity": "Humidity",
+    "wind": "Wind",
+    "clickToFetch": "Click the button to fetch weather data.",
+    "locationErrorTitle": "Location Error",
+    "locationErrorDescription": "Could not retrieve your location. Please enable location services.",
+    "weatherErrorTitle": "Weather Error",
+    "weatherErrorDescription": "Could not fetch weather data. Please try again."
+  },
+  "marketPrices": {
+    "title": "Live Market Prices",
+    "subtitle": "Get real-time crop prices from markets near you.",
+    "cardTitle": "Today's Market Prices",
+    "showingPricesFor": "Showing prices for",
+    "clickToGetPrices": "Click the button to get market prices for your current location.",
+    "getPricesButton": "Get Market Prices",
+    "yourLocation": "Your Location",
+    "table": {
+      "crop": "Crop",
+      "price": "Price",
+      "unit": "Unit"
+    },
+    "loading": "Fetching market prices...",
+    "locationErrorTitle": "Location Error",
+    "locationErrorDescription": "Could not retrieve your location. Please enable location services.",
+    "priceErrorTitle": "Market Price Error",
+    "priceErrorDescription": "Could not fetch market prices. Please try again."
+  },
+  "aiAdvisory": {
+    "title": "AI-Powered Crop Advisory",
+    "subtitle": "Get instant, personalized advice for your farm. Just fill in your details and ask a question.",
+    "locationPlaceholder": "Location (e.g., Punjab)",
+    "cropTypePlaceholder": "Crop Type (e.g., Wheat)",
+    "soilTypePlaceholder": "Soil Type (e.g., Loamy)",
+    "queryPlaceholder": "Ask your question... (e.g., When should I irrigate?)",
+    "getAdviceButton": "Get Advice",
+    "cardTitle": "Your Advisory",
+    "cardDescription": "AI-generated recommendations will appear here.",
+    "waitingForQuestion": "Waiting for your question...",
+    "missingInfoTitle": "Missing Information",
+    "missingInfoDescription": "Please fill out all required fields.",
+    "errorTitle": "Error",
+    "errorDescription": "Failed to get advisory. Please try again."
+  },
+  "pestDetection": {
+    "title": "Image-Based Pest & Disease Detection",
+    "subtitle": "Upload a photo of your crop, and our AI will diagnose any issues.",
+    "uploadCardTitle": "1. Upload or Capture Crop Image",
+    "cropPreviewAlt": "Crop preview",
+    "chooseImageButton": "Choose Image",
+    "takePhotoButton": "Take Photo",
+    "runDetectionButton": "2. Run Detection",
+    "diagnosisCardTitle": "Diagnosis Result",
+    "diagnosisCardDescription": "Our AI's analysis of your crop image.",
+    "analyzing": "Analyzing image...",
+    "healthyCrop": "Healthy Crop",
+    "confidence": "Confidence",
+    "suggestedActions": "Suggested Actions",
+    "noActionsNeeded": "No specific actions needed. Keep monitoring your crop's health.",
+    "resultsPlaceholder": "Results will be shown here after detection.",
+    "noImageTitle": "No Image",
+    "noImageDescription": "Please upload an image first.",
+    "detectionFailedTitle": "Detection Failed",
+    "detectionFailedDescription": "Could not analyze the image. Please try again.",
+    "cameraCapture": {
+      "title": "Take a Photo",
+      "description": "Center the affected part of the plant in the frame and capture.",
+      "capturedPreviewAlt": "Captured image preview",
+      "captureButton": "Capture Photo",
+      "retakeButton": "Retake",
+      "usePhotoButton": "Use Photo",
+      "cameraNotSupportedTitle": "Camera Not Supported",
+      "cameraNotSupportedDescription": "Your browser does not support camera access.",
+      "cameraAccessDeniedTitle": "Camera Access Denied",
+      "cameraAccessDeniedDescription": "Please enable camera permissions in your browser settings.",
+      "cameraAccessRequiredTitle": "Camera Access Required",
+      "cameraAccessRequiredDescription": "Please allow camera access to use this feature."
+    }
+  },
+  "impact": {
+    "title": "Our Impact",
+    "subtitle": "Transforming agriculture, one farmer at a time.",
+    "benefits": {
+      "higherProductivity": "Higher Productivity",
+      "reducedCosts": "Reduced Costs",
+      "sustainableFarming": "Sustainable Farming",
+      "ecoFriendlyPractices": "Eco-Friendly Practices"
+    },
+    "storiesTitle": "Farmer Success Stories",
+    "photoOf": "Photo of",
+    "stories": [
+      {
+        "id": "farmer-story-1",
+        "name": "Ramesh Kumar",
+        "location": "Haryana",
+        "story": "“Using the AI advisor, I increased my wheat yield by 20% and saved on fertilizers. This app is a blessing for us.”"
+      },
+      {
+        "id": "farmer-story-2",
+        "name": "Suresh Patil",
+        "location": "Maharashtra",
+        "story": "“The pest detection feature saved my cotton crop from a disaster. I identified the issue early and took action immediately.”"
+      },
+      {
+        "id": "farmer-story-3",
+        "name": "Anjali Devi",
+        "location": "West Bengal",
+        "story": "“As a new farmer, the weather alerts and market prices help me make informed decisions. It feels like having an expert by my side.”"
+      }
+    ]
+  },
+  "stakeholders": {
+    "title": "Our Stakeholders",
+    "subtitle": "A collaborative ecosystem for agricultural growth.",
+    "farmers": "Farmers",
+    "agricultureOfficers": "Agriculture Officers",
+    "ngos": "NGOs",
+    "agriTechStartups": "Agri-Tech Startups"
+  },
+  "contact": {
+    "title": "Contact & Support",
+    "subtitle": "We are here to help. Reach out to us with your questions or feedback.",
+    "form": {
+      "title": "Send us a Message",
+      "description": "We'll get back to you as soon as possible.",
+      "namePlaceholder": "Your Name",
+      "emailPlaceholder": "Your Email",
+      "phonePlaceholder": "Your Phone",
+      "languagePlaceholder": "Select Language",
+      "messagePlaceholder": "Your message...",
+      "submitButton": "Send Message"
+    },
+    "whatsapp": {
+      "title": "WhatsApp Support",
+      "description": "Chat with us directly on WhatsApp.",
+      "cta": "Start Chat"
+    },
+    "toast": {
+      "title": "Feedback Sent!",
+      "description": "Thank you for your valuable feedback."
+    }
+  },
+  "footer": {
+    "copyright": "© {year} KrushiKul. All rights reserved.",
+    "motto": "Made with ❤️ for Indian Farmers.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  }
+}

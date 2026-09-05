@@ -1,0 +1,34 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "A lush green Indian farm landscape under a clear blue sky",
+      "imageUrl": "https://images.unsplash.com/photo-1600150806237-a7dffed6b53c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxpbmRpYW4lMjBmYXJtfGVufDB8fHx8MTc1ODYyNjQ0NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "indian farm"
+    },
+    {
+      "id": "farmer-story-1",
+      "description": "A smiling, middle-aged Indian farmer standing in his field",
+      "imageUrl": "https://images.unsplash.com/photo-1588812068981-c46370419a5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxoYXBweSUyMGZhcm1lcnxlbnwwfHx8fDE3NTg2MjY0NDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "happy farmer"
+    },
+    {
+      "id": "farmer-story-2",
+      "description": "A young Indian farmer inspecting his healthy crops",
+      "imageUrl": "https://images.unsplash.com/photo-1695566371418-fd617877ab3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxmYXJtZXIlMjBjcm9wc3xlbnwwfHx8fDE3NTg2MjY0NDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "farmer crops"
+    },
+    {
+      "id": "farmer-story-3",
+      "description": "A woman farmer from India working in a vegetable garden",
+      "imageUrl": "https://images.unsplash.com/photo-1662717402043-d3145ade14fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3b21hbiUyMGZhcm1lcnxlbnwwfHx8fDE3NTg2MjU5MDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman farmer"
+    },
+    {
+      "id": "pest-detection-placeholder",
+      "description": "A close-up of a green leaf, ready for pest analysis",
+      "imageUrl": "https://images.unsplash.com/photo-1707388918238-0aac355a0067?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwbGFudCUyMGxlYWZ8ZW58MHx8fHwxNzU4NjAwOTQzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "plant leaf"
+    }
+  ]
+}
