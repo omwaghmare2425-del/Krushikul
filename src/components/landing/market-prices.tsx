@@ -50,7 +50,7 @@ export function MarketPrices({ dictionary }: { dictionary: any }) {
         setPrices(null);
         try {
           const locationString = `${location.latitude}, ${location.longitude}`;
-          
+
           try {
             const geocodeResponse = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${location.latitude}&lon=${location.longitude}`);
             const geocodeData = await geocodeResponse.json();
@@ -93,11 +93,11 @@ export function MarketPrices({ dictionary }: { dictionary: any }) {
         </CardHeader>
         <CardContent className="flex flex-col items-center justify-center min-h-[250px] space-y-6">
           {!location && !isLocating && (
-             <Button onClick={handleLocation}>
+            <Button onClick={handleLocation}>
               <MapPin className="mr-2 h-4 w-4" /> {dictionary.getPricesButton}
             </Button>
           )}
-          
+
           {(isLoading || isLocating) && <div className="flex items-center gap-2 text-muted-foreground"><Loader2 className="w-8 h-8 animate-spin text-primary" /> {dictionary.loading}</div>}
 
           {!isLoading && !isLocating && prices && location && (
@@ -113,7 +113,7 @@ export function MarketPrices({ dictionary }: { dictionary: any }) {
                 {prices.map((item, index) => (
                   <TableRow key={index}>
                     <TableCell className="font-medium">{item.crop}</TableCell>
-                    <TableCell className="text-right">₹{item.price.toFixed(2)}</TableCell>
+                    <TableCell className="text-right">₹{item.price.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</TableCell>
                     <TableCell className="text-right">{item.unit}</TableCell>
                   </TableRow>
                 ))}
