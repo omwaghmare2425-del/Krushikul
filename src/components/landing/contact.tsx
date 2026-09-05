@@ -115,7 +115,7 @@ export function Contact({ dictionary }: { dictionary: any }) {
               <div>
                 <h3 className="font-bold text-lg">{dictionary.whatsapp.title}</h3>
                 <p className="text-muted-foreground">{dictionary.whatsapp.description}</p>
-                <a href="https://wa.me/27604133434" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold mt-1 block hover:underline">{dictionary.whatsapp.cta}</a>
+                <a href="https://wa.me/919588648972" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold mt-1 block hover:underline">{dictionary.whatsapp.cta}</a>
               </div>
             </Card>
           </div>
@@ -124,3 +124,4 @@ export function Contact({ dictionary }: { dictionary: any }) {
     </section>
   );
 }
+
