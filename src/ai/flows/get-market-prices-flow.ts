@@ -1,56 +1,42 @@
 'use server';
-/**
- * @fileOverview An AI agent for fetching real-time crop market prices.
- *
- * - getMarketPrices - A function that fetches crop prices for a given location.
- * - MarketPricesInput - The input type for the getMarketPrices function.
- * - MarketPricesOutput - The return type for the getMarketPrices function.
- */
 
-import { ai } from '@/ai/genkit';
 import { z } from 'genkit';
-import { googleAI } from '@genkit-ai/googleai';
 
 const MarketPricesInputSchema = z.object({
-  location: z.string().describe('The location for which to fetch crop market prices (e.g., city name or lat/lon).'),
+  location: z.string(),
 });
+
 export type MarketPricesInput = z.infer<typeof MarketPricesInputSchema>;
 
 const MarketPricesOutputSchema = z.object({
-  prices: z.array(z.object({
-    crop: z.string().describe('The name of the crop.'),
-    price: z.number().describe('The market price of the crop in Indian Rupees (INR).'),
-    unit: z.string().describe('The unit of measurement for the price (e.g., "per Quintal", "per Kg").'),
-  })).describe('A list of crops and their market prices.'),
+  prices: z.array(
+    z.object({
+      crop: z.string(),
+      price: z.number(),
+      unit: z.string(),
+    })
+  ),
 });
+
 export type MarketPricesOutput = z.infer<typeof MarketPricesOutputSchema>;
 
-export async function getMarketPrices(input: MarketPricesInput): Promise<MarketPricesOutput> {
-  return marketPricesFlow(input);
+export async function getMarketPrices(
+  input: MarketPricesInput
+): Promise<MarketPricesOutput> {
+  // Demo market prices in INR.
+  // Gemini is intentionally not used here, so the feature
+  // does not depend on Gemini API quota.
+  const prices = [
+    { crop: 'Wheat', price: 2500, unit: 'per Quintal' },
+    { crop: 'Rice', price: 3200, unit: 'per Quintal' },
+    { crop: 'Cotton', price: 7200, unit: 'per Quintal' },
+    { crop: 'Soybean', price: 4550, unit: 'per Quintal' },
+    { crop: 'Onion', price: 2250, unit: 'per Quintal' },
+    { crop: 'Maize', price: 2450, unit: 'per Quintal' },
+    { crop: 'Tomato', price: 3100, unit: 'per Quintal' },
+  ];
+
+  return {
+    prices,
+  };
 }
-
-const prompt = ai.definePrompt({
-  name: 'marketPricesPrompt',
-  input: { schema: MarketPricesInputSchema },
-  output: { schema: MarketPricesOutputSchema },
-  model: googleAI.model('gemini-3.6-flash'),
-  prompt: `You are a market data service providing real-time agricultural commodity prices.
-  Given the location, provide a list of 5-7 common crops and their current, realistic market prices in Indian Rupees (INR).
-  The currency for the price must be in INR.
-  The unit should typically be "per Quintal".
-
-  Location: {{{location}}}
-  `,
-});
-
-const marketPricesFlow = ai.defineFlow(
-  {
-    name: 'marketPricesFlow',
-    inputSchema: MarketPricesInputSchema,
-    outputSchema: MarketPricesOutputSchema,
-  },
-  async input => {
-    const { output } = await prompt(input);
-    return output!;
-  }
-);
