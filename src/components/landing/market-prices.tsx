@@ -113,7 +113,7 @@ export function MarketPrices({ dictionary }: { dictionary: any }) {
                 {prices.map((item, index) => (
                   <TableRow key={index}>
                     <TableCell className="font-medium">{item.crop}</TableCell>
-                    <TableCell className="text-right">₹{item.price.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</TableCell>
+                    <TableCell className="text-right">₹{item.price.toFixed(2)}</TableCell>
                     <TableCell className="text-right">{item.unit}</TableCell>
                   </TableRow>
                 ))}
