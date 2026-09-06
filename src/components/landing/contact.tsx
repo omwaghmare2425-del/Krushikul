@@ -23,8 +23,9 @@ export function Contact({ dictionary }: { dictionary: any }) {
   const [language, setLanguage] = useState('');
   const [message, setMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const webhookUrl = 'https://krushikul.app.n8n.cloud/webhook/ed2941d4-f17f-4cbc-ba24-c0fcdd1af74b';
 
-  const webhookUrl = 'https://sih2k25.app.n8n.cloud/webhook/1b35bd2e-9ee0-4d71-8b7b-46a41d016ef7';
+
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -43,12 +44,12 @@ export function Contact({ dictionary }: { dictionary: any }) {
         body: formData,
         mode: 'no-cors', // This will help with CORS issues for "fire-and-forget" requests
       });
-      
+
       toast({
         title: dictionary.toast.title,
         description: dictionary.toast.description,
       });
-      
+
       // Reset form
       setName('');
       setEmail('');
@@ -103,7 +104,7 @@ export function Contact({ dictionary }: { dictionary: any }) {
                 </Select>
                 <Textarea placeholder={dictionary.form.messagePlaceholder} rows={5} value={message} onChange={(e) => setMessage(e.target.value)} required />
                 <Button type="submit" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground" disabled={isLoading}>
-                  {isLoading ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Send className="mr-2 h-4 w-4" />} 
+                  {isLoading ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Send className="mr-2 h-4 w-4" />}
                   {isLoading ? 'Sending...' : dictionary.form.submitButton}
                 </Button>
               </form>
@@ -124,4 +125,3 @@ export function Contact({ dictionary }: { dictionary: any }) {
     </section>
   );
 }
-
